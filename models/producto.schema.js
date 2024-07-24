@@ -13,6 +13,10 @@ const ProductSchema = new mongoose.Schema({
     type: Number,
     required: true
   },
+  imagen: {
+    type: String,
+    default: ''
+  }
 })
 
 const ProductModel = mongoose.model('product', ProductSchema)
